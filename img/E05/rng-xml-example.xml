@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <ref name="etikett" />
+  </start>
+  <define name="etikett">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The root element in a label description using the Wine Label Vocabulary.</a:documentation>
+    <element>
+      <name ns="">etikett</name>
+      <ref name="jahrgang" />
+      <ref name="lage" />
+    </element>
+  </define>
+  <define name="jahrgang">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The millesime mentioned on the label.</a:documentation>
+    <element>
+      <name ns="">jahrgang</name>
+    </element>
+  </define>
+  <define name="lage">
+    <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The vineyard mentioned on the label.</a:documentation>
+    <element>
+      <name ns="">lage</name>
+    </element>
+  </define>
+</grammar>
